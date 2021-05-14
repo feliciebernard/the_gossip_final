@@ -13,4 +13,4 @@ Avant toute utilisation, lancer :
 - rails db:migrate
 - rails db:seed
 
-et c'est partie !!
+et c'est partie pour le show !
