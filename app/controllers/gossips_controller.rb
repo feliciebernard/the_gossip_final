@@ -14,9 +14,9 @@ class GossipsController < ApplicationController
   end
 
   def create
-    @gossips = Gossip.create(post_params)
+    @gossip = Gossip.create(title: params['title'], content: params['content'])
 
-    if @gossips.save
+    if @gossip.save
       redirect_to gossips_path
     else
       puts "try again"
